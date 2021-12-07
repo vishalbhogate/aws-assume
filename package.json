@@ -1,0 +1,47 @@
+{
+  "name": "aws-assume-local",
+  "publisher": "@vishalbhogate",
+  "description": "Generate teporary credentials for aws assumed roles.",
+  "version": "0.1.0",
+  "author": "Vishal Bhogate <vishal140289@gmail.com>",
+  "keywords": [
+    "aws",
+    "switch role",
+    "switch",
+    "credentials",
+    "sts",
+    "ami"
+  ],
+  "bin": {
+    "aws-assume": "./bin/aws-assume"
+  },
+  "main": "./lib/aws-assume",
+  "scripts": {
+    "build": "npm run clean && ./node_modules/.bin/babel src -d lib",
+    "prepublish": "npm run build",
+    "clean": "rm -rf lib/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vishalbhogate/aws-assume.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.7.7",
+    "babel-polyfill": "^6.16.0",
+    "ini": "^1.3.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-plugin-transform-async-to-generator": "6.8.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.11.5",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.19.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "pre-commit": "^1.1.3"
+  },
+  "pre-commit": [
+    "build"
+  ]
+}
