@@ -1,6 +1,6 @@
 {
-  "name": "aws-assume-local",
-  "publisher": "@vishalbhogate",
+  "name": "@vishalbhogate/aws-assume-local",
+  "publisher": "Vishal Bhogate <vishal140289@gmail.com>",
   "description": "Generate teporary credentials for aws assumed roles.",
   "version": "0.1.0",
   "author": "Vishal Bhogate <vishal140289@gmail.com>",
