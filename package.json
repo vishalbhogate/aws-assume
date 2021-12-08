@@ -2,7 +2,7 @@
   "name": "@vishalbhogate/aws-assume",
   "publisher": "Vishal Bhogate <vishal140289@gmail.com>",
   "description": "Generate teporary credentials for aws assumed roles.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Vishal Bhogate <vishal140289@gmail.com>",
   "keywords": [
     "aws",
